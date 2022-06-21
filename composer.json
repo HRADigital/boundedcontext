@@ -14,16 +14,20 @@
         "phpunit/phpunit": "^9.5.10"
     },
     "autoload": {
+        "classmap": [
+            "TransferGo/BoundedContext/"
+        ],
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "TransferGo\\BoundedContext\\": "TransferGo/BoundedContext/src"
         }
     },
     "autoload-dev": {
-        "classmap": [
-            "tests/"
-        ]
+        "psr-4": {
+            "TransferGo\\Tests\\BoundedContext\\": "TransferGo/BoundedContext/tests"
+        }
     },
     "config": {
         "preferred-install": "dist",
