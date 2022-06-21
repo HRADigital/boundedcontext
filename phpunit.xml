@@ -5,7 +5,13 @@
          colors="true"
 >
     <testsuites>
-        <testsuite name="Application Test Suite">
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./TransferGo/BoundedContext/tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Integration">
+            <directory suffix="Test.php">./TransferGo/BoundedContext/tests/Integration</directory>
+        </testsuite>
+        <testsuite name="System">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
