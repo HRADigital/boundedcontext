@@ -1,0 +1,1 @@
+# Default namespace separator
